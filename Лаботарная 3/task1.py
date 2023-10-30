@@ -1,8 +1,8 @@
 # TODO Напишите функцию для поиска индекса товара
 def find_index(list_, product):
-    for i in list_:
-        if i == product:
-            return list_.index(i)
+    for index, current_product in enumerate(list_):
+        if current_product == product:
+            return index
     return None
 
 
